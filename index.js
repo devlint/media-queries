@@ -17,6 +17,8 @@ var createPage = (function () {
     },
     'Color': {
       'color': true,
+      'color-gamut': ['srgb', 'p3', 'rec2020'],
+      'dynamic-range': ['standard', 'high'],
       'inverted-colors': ['none', 'inverted']
     },
     'Interaction': {
@@ -26,7 +28,8 @@ var createPage = (function () {
       'any-hover': ['none', 'on-demand', 'hover']
     },
     'Environment': {
-      'light-level': ['dim', 'normal', 'washed']
+      'light-level': ['dim', 'normal', 'washed'],
+      'prefers-color-scheme': ['light', 'dark']
     },
     'Scripting': {
       'script': ['none', 'initial-only', 'enabled']
